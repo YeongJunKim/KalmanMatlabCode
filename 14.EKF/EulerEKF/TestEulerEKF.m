@@ -24,10 +24,17 @@ PsiSaved   = EulerSaved(:, 3) * 180/pi;
 t = 0:dt:Nsamples*dt-dt;
 
 figure
+subplot(1,3,1)
 plot(t, PhiSaved)
+xlabel('Time [sec]')
+ylabel('Roll angle [deg]')
 
-figure
+subplot(1,3,2)
 plot(t, ThetaSaved)
+xlabel('Time [sec]')
+ylabel('Pitch angle [deg]')
 
-figure
+subplot(1,3,3)
 plot(t, PsiSaved)
+xlabel('Time [sec]')
+ylabel('Yaw angle [deg]')
