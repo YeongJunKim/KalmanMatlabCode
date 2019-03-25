@@ -25,10 +25,11 @@ AltSaved = Xsaved(:, 3);
 t = 0:dt:Nsamples*dt-dt;
 
 figure
+subplot(2,3,1)
 plot(t, PosSaved)
 
-figure
+subplot(2,3,2)
 plot(t, VelSaved)
 
-figure
+subplot(2,3,3)
 plot(t, AltSaved)
